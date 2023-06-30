@@ -1,0 +1,80 @@
+/* slide design start */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear;
+  }
+
+   .logos-slide img {
+    height: 90px;
+    margin: 3px;}
+/* slide design end */
+
+/* scroll design start */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll {
+  overflow: hidden;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll:before,
+.scroll:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.scroll-slide {
+  display: inline-block;
+  animation: 60s slide infinite linear;
+}
+/* scroll design end */
+
+

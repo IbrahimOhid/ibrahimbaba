@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Form</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="bg-gray-50 fixed w-full z-20 py-2 px-2 sm:px-0 top-0 left-0 border-b border-gray-200">
+
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mt-3 mb-3">
+            <a class="flex items-center">
+                <img src="/img/logo.jpg" class="w-24 h-16" alt="logo">
+
+                <span
+                    class="self-center text-2xl font-semibold whitespace-nowrap text-blue-500 -ml-5">IbrahimBaba</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Product</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Contact</a>
+                    </li>
+                    <li class="inline-flex items-center text-sm font-medium text-center text-gray-900 py-2 pl-3 pr-4rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4 cursor-pointer"
+                        type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                        </svg>
+                    </li>
+                    <li data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+                        class="flex text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 border border-blue-700 px-5 py-[1px] text-center items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 mr-1">
+                            <path fill-rule="evenodd"
+                                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Log In
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- application form start-->
+    <div class="py-5 px-20 mt-28 h-auto">
+        <div class="containe mx-auto rounded">
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Application Form</p>
+                    <div class="ml-2 cursor-pointer text-gray-600">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Personal Information</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="FirstName"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Applicant's
+                                Name</label>
+                            <input tabindex="0" type="text" id="FirstName" name="firstName" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="FatherName"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Father's
+                                Name</label>
+                            <input tabindex="0" type="text" id="FatherName" name="fatherName" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="MotherName"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Mother's
+                                Name</label>
+                            <input tabindex="0" type="text" id="motherName" name="motherName" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="DateOfBirth"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Date
+                                of Birth</label>
+                            <input tabindex="0" type="date" id="dateOfBirht" name="dateOfBirth" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="dd/mm/yy" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Nationality"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Nationality</label>
+                            <select name="occupation" id="occupation"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Bangladesh</option>
+                                <option value="">India</option>
+                                <option value="">Pakistan</option>
+                                <option value="">United States</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Religion"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Religion</label>
+                            <select name="occupation" id="occupation"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Islam</option>
+                                <option value="">Hindus</option>
+                                <option value="">Christians</option>
+                                <option value="">Buddhists</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Gender
+                                    class=" xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 ">Gender</label>
+                                <select name=" occupation" id="occupation"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Transgender</option>
+                                </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="NationalID"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">National
+                                ID</label>
+                            <input tabindex="0" type="number" id="NationalId" name="nationalId" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="BirthRegistration"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Birth
+                                Registration</label>
+                            <input tabindex="0" type="number" id="BirthRegistration" name="birthRegistration"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="PassportId"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Passport
+                                ID</label>
+                            <input tabindex="0" type="number" id="PassportId" name="passportId"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="MaritalStatus"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Marital
+                                Status</label>
+                            <select name="occupation" id="occupation"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Single</option>
+                                <option value="">Married</option>
+                                <option value="">Unmarried</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="MobileNumber"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Mobile
+                                Number</label>
+                            <input tabindex="0" type="number" id="FMobileNumber" name="mobileNumber"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="ConformMobileNumber"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Conform
+                                Mobile Number</label>
+                            <input tabindex="0" type="number" id="FConformMobileNumber" name="conformMobileNumber"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Email"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Email</label>
+                            <input tabindex="0" type="email" id="Email" name="email" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Quota"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Quota</label>
+                            <select name="quota" id="Quota"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Cristian</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Present Address</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Village"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Village
+                                / Town / Road / House</label>
+                            <input tabindex="0" type="text" id="Village" name="Village" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="district"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">District</label>
+                            <select name="district" id="district"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Cox's Bazar</option>
+                                <option value="">Chittagong</option>
+                                <option value="">Dhaka</option>
+                                <option value="">Rajshahi</option>
+                                <option value="">Barisal</option>
+                                <option value="">Natore</option>
+                                <option value="">Rangamati</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="upazila"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Upazila
+                                / Police Station</label>
+                            <select name="upazila" id="upazila"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Cox's Bazar</option>
+                                <option value="">Chittagong</option>
+                                <option value="">Dhaka</option>
+                                <option value="">Rajshahi</option>
+                                <option value="">Barisal</option>
+                                <option value="">Natore</option>
+                                <option value="">Rangamati</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="postOffice"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Post
+                                Office</label>
+                            <input tabindex="0" type="number" id="postOffice" name="postOffice" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="postCode"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Post
+                                Code</label>
+                            <input tabindex="0" type="number" id="postCode" name="postCode"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="flex items-center">
+                <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 ">
+                <label for="link-checkbox"
+                    class="w-full pl-3 py-3 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">Same
+                    as Present Address</label>
+            </div>
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Permanent Address</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Village"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Village
+                                / Town / Road / House</label>
+                            <input tabindex="0" type="text" id="Village" name="Village" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="district"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">District</label>
+                            <select name="district" id="district"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Cox's Bazar</option>
+                                <option value="">Chittagong</option>
+                                <option value="">Dhaka</option>
+                                <option value="">Rajshahi</option>
+                                <option value="">Barisal</option>
+                                <option value="">Natore</option>
+                                <option value="">Rangamati</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="upazila"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Upazila
+                                / Police Station</label>
+                            <select name="upazila" id="upazila"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="">Cox's Bazar</option>
+                                <option value="">Chittagong</option>
+                                <option value="">Dhaka</option>
+                                <option value="">Rajshahi</option>
+                                <option value="">Barisal</option>
+                                <option value="">Natore</option>
+                                <option value="">Rangamati</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="postOffice"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Post
+                                Office</label>
+                            <input tabindex="0" type="number" id="postOffice" name="postOffice" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="postCode"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Post
+                                Code</label>
+                            <input tabindex="0" type="number" id="postCode" name="postCode"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ssc start -->
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">SSC / Equivalent Level</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Examination</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Examination</option>
+                                <option value="">S.S.C</option>
+                                <option value="">Dakhil</option>
+                                <option value="">O Level</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="rollNo"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Exam
+                                Roll</label>
+                            <input tabindex="0" type="number" id="rollNo" name="rollNo" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Group
+                                / Subject</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Subject</option>
+                                <option value=""> Science </option>
+                                <option value=""> Architecture Technology </option>
+                                <option value=""> Business studies </option>
+                                <option value=""> Commerce </option>
+                                <option value=""> Computer Operation </option>
+                                <option value=""> General </option>
+                                <option value=""> General Electrical Work </option>
+                                <option value="5"> Humanities </option>
+                                <option value=""> Mechanical Technology </option>
+                            </select>
+                        </div <div class="flex flex-col sm:flex-none mb-6">
+                        <label for="board"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Board</label>
+                        <select name="board" id="board"
+                            class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">Select Board</option>
+                            <option value="">Dhaka</option>
+                            <option value="">Rajshahi</option>
+                            <option value="">Comilla</option>
+                            <option value="">Jessore</option>
+                            <option value="">Chittagong</option>
+                            <option value="">Sylhet</option>
+                            <option value="">Dinajpur</option>
+                            <option value="">Madrasah</option>
+                        </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="result"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Result</label>
+                    <div class="flex justify-center">
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">CGPA</label>
+                        <input tabindex="0" type="number" id="result" name="result" required
+                            class="border border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                            placeholder="" />
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">Out
+                            Of</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full -mt-3 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">out of</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Passing
+                        Year</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- hsc start -->
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">HSC / Equivalent Level</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Examination</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Examination</option>
+                                <option value=""> H.S.C. </option>
+                                <option value=""> Alim </option>
+                                <option value=""> Diploma </option>
+                                <option value=""> Diploma in CSE </option>
+                                <option value=""> Diploma (Electrical) </option>
+                                <option value=""> A Level </option>
+                                <option value=""> HSC Equivalent </option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="rollNo"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Exam
+                                Roll</label>
+                            <input tabindex="0" type="number" id="rollNo" name="rollNo" required
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                                placeholder="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Group
+                                / Subject</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Subject</option>
+                                <option value=""> Science </option>
+                                <option value=""> Architecture Technology </option>
+                                <option value=""> Business studies </option>
+                                <option value=""> Commerce </option>
+                                <option value=""> Computer Operation </option>
+                                <option value=""> General </option>
+                                <option value=""> General Electrical Work </option>
+                                <option value="5"> Humanities </option>
+                                <option value=""> Mechanical Technology </option>
+                            </select>
+                        </div <div class="flex flex-col sm:flex-none mb-6">
+                        <label for="board"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Board</label>
+                        <select name="board" id="board"
+                            class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">Select Board</option>
+                            <option value="">Dhaka</option>
+                            <option value="">Rajshahi</option>
+                            <option value="">Comilla</option>
+                            <option value="">Jessore</option>
+                            <option value="">Chittagong</option>
+                            <option value="">Sylhet</option>
+                            <option value="">Dinajpur</option>
+                            <option value="">Madrasah</option>
+                        </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="result"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Result</label>
+                    <div class="flex justify-center">
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">CGPA</label>
+                        <input tabindex="0" type="number" id="result" name="result" required
+                            class="border border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                            placeholder="" />
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">Out
+                            Of</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full -mt-3 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">out of</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Passing
+                        Year</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- graduation start -->
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="flex items-center">
+                <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 ">
+                <label for="link-checkbox"
+                    class="w-full pl-3 py-2 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">If
+                    Applicable</label>
+            </div>
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Graduation / Equivalent Level</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Examination</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Examination</option>
+                                <option value=""> B. Sc. (Pass) </option>
+                                <option value=""> B.B.A. </option>
+                                <option value=""> B.S.S. (Hons) </option>
+                                <option value=""> B.Sc. (Hon''s) </option>
+                                <option value=""> B.Sc. Engg. </option>
+                                <option value=""> Bachelor </option>
+                                <option value=""> Bachelor 4yrs </option>
+                                <option value=""> M.A. </option>
+                                <option value=""> M.B.A. </option>
+                                <option value=""> M.B.M. </option>
+                                <option value=""> M.S.S </option>
+                                <option value=""> M.Sc. Engg. </option>
+                                <option value=""> Master of Science </option>
+                                <option value=""> Masters </option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Subject
+                                / Degree</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Subject</option>
+                                <option value=""> Accounting </option>
+                                <option value=""> Accounting &amp; Information System </option>
+                                <option value=""> Aeronautical Engineering </option>
+                                <option value=""> Agribusiness Management </option>
+                                <option value=""> Agricultural Economics </option>
+                                <option value=""> Agricultural Extension Education </option>
+                                <option value=""> Agricultural Science </option>
+                                <option value=""> Agriculture </option>
+                                <option value=""> Agronomy </option>
+                                <option value=""> Al-Quran &amp; Islamic Studies </option>
+                                <option value=""> Animal Husbandry </option>
+                                <option value=""> Anthropology </option>
+                                <option value=""> Applied Chemistry &amp; Chemical Technology </option>
+                                <option value=""> Applied Mathematics </option>
+                                <option value=""> Applied Physics &amp; Electronics </option>
+                                <option value=""> Applied Statistics </option>
+                                <option value=""> Arabic </option>
+                                <option value=""> Archaeology </option>
+                                <option value=""> Architecture </option>
+                                <option value=""> Architecture Technology </option>
+                                <option value=""> Arts </option>
+                                <option value=""> Automobile Engineering </option>
+                                <option value=""> B.Sc in Computer Science </option>
+                                <option value=""> B.Sc in ETE </option>
+                                <option value=""> B.Sc in Information &amp; Communication Technology </option>
+                                <option value=""> B.Sc in Information Technology </option>
+                                <option value=""> B.Sc in MIS </option>
+                                <option value=""> B.Sc in Software Engineering </option>
+                                <option value=""> Banking </option>
+                                <option value=""> Banking &amp; Insurance </option>
+                                <option value=""> Bengali </option>
+                                <option value=""> Biochemistry &amp; Molecular Biology </option>
+                                <option value=""> Biotecnology &amp; Genetic Engineering </option>
+                                <option value=""> Botany </option>
+                                <option value=""> BSS </option>
+                                <option value=""> Business Studies </option>
+                                <option value=""> Business studies </option>
+                                <option value=""> Chemical Engineering </option>
+                                <option value=""> Chemistry </option>
+                                <option value=""> Civil Engineering </option>
+                                <option value=""> Commerce </option>
+                                <option value=""> Communication and Journalism </option>
+                                <option value=""> Computer &amp; Communication Engineering </option>
+                                <option value=""> Computer Operation </option>
+                                <option value=""> Computer Science </option>
+                                <option value=""> Computer Science &amp; Engineering </option>
+                                <option value=""> Crop Botany </option>
+                                <option value=""> CSIT </option>
+                                <option value=""> Dairy science </option>
+                                <option value=""> Development Studies </option>
+                                <option value=""> Disaster Management </option>
+                                <option value=""> Economics </option>
+                                <option value=""> Education </option>
+                                <option value=""> Electrical &amp; Communication Engineering </option>
+                                <option value=""> Electrical &amp; Electronic Engineering </option>
+                                <option value=""> Electronic &amp; Communication Engineering </option>
+                                <option value=""> Electronic &amp; Telecommunication </option>
+                                <option value=""> Electronics </option>
+                                <option value=""> English </option>
+                                <option value=""> English Language &amp; Literature </option>
+                                <option value=""> Entomology </option>
+                                <option value=""> Environmental Science </option>
+                                <option value=""> Fashion Design </option>
+                                <option value=""> Finance </option>
+                                <option value=""> Finance &amp; Accounting </option>
+                                <option value=""> Finance &amp; Banking </option>
+                                <option value=""> Fish Processing &amp; Quality Control </option>
+                                <option value=""> Fisheries </option>
+                                <option value=""> Food &amp; Process Engineering </option>
+                                <option value=""> Food Engineering </option>
+                                <option value=""> Food Processing &amp; Preservati </option>
+                                <option value=""> Food Technology &amp; Nutritional Science </option>
+                                <option value=""> Forestry </option>
+                                <option value=""> Forestry &amp; Environmental Science </option>
+                                <option value=""> General </option>
+                                <option value=""> General </option>
+                                <option value=""> General Electrical Work </option>
+                                <option value=""> Genetic Engineering &amp; Biotechnology </option>
+                                <option value=""> Geography </option>
+                                <option value=""> Geography &amp; Environment </option>
+                                <option value=""> Geological Science </option>
+                                <option value=""> Govt. &amp; Politics </option>
+                                <option value=""> Hadith </option>
+                                <option value=""> Health Economics </option>
+                                <option value=""> History </option>
+                                <option value=""> Home Economics </option>
+                                <option value=""> Horticulture </option>
+                                <option value=""> Human Resource Management </option>
+                                <option value=""> Humanities </option>
+                                <option value=""> Industrial and Production Engineering </option>
+                                <option value=""> Information &amp; Communication Technology </option>
+                                <option value=""> Information Science &amp; Library </option>
+                                <option value=""> Information Tecnology </option>
+                                <option value=""> International Business </option>
+                                <option value=""> International Management </option>
+                                <option value=""> International Relations </option>
+                                <option value=""> Islamic History &amp; Culture </option>
+                                <option value=""> Islamic Studies </option>
+                                <option value="1"> Languistics </option>
+                                <option value=""> Law </option>
+                                <option value=""> Leather Engineering &amp; Technology </option>
+                                <option value=""> Management </option>
+                                <option value=""> Management Information System </option>
+                                <option value=""> Management Studies </option>
+                                <option value=""> Marine Engineering </option>
+                                <option value=""> Marine Science </option>
+                                <option value=""> Marketing </option>
+                                <option value=""> Mass Communication &amp; Journalis </option>
+                                <option value=""> Mathematics </option>
+                                <option value=""> Mechanical Engineering </option>
+                                <option value=""> Mechanical Technology </option>
+                                <option value=""> Mechatronics </option>
+                                <option value=""> Microbiology </option>
+                                <option value=""> MSS </option>
+                                <option value=""> Operations &amp; Supply Chain Management </option>
+                                <option value=""> Other </option>
+                                <option value=""> Peace &amp; Conflict Studies </option>
+                                <option value=""> Petrolium and Mining Engineering </option>
+                                <option value=""> Pharmacy </option>
+                                <option value=""> Philosophy </option>
+                                <option value=""> Physics </option>
+                                <option value=""> Political Science </option>
+                                <option value=""> Population Science &amp; Human Resource </option>
+                                <option value=""> Psychology </option>
+                                <option value=""> Public Administration </option>
+                                <option value=""> Quranic Science &amp; Islamic Studies </option>
+                                <option value=""> Science </option>
+                                <option value=""> Social Welfare </option>
+                                <option value=""> Social Work </option>
+                                <option value=""> Sociology </option>
+                                <option value=""> Soil, Water &amp; Environment </option>
+                                <option value=""> Statistics </option>
+                                <option value=""> Supply Chain Management </option>
+                                <option value=""> Sylhet Agricultural University </option>
+                                <option value=""> Textile Engineering </option>
+                                <option value=""> Textile Technology </option>
+                                <option value=""> Tourism &amp; Hospitality Management </option>
+                                <option value=""> Urban &amp; Regional Planning </option>
+                                <option value=""> Veterinary Medicine </option>
+                                <option value=""> Zoology </option>
+                            </select>
+                        </div <div class="flex flex-col sm:flex-none mb-6">
+                        <label for="board"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">University
+                            / Institute</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">Select University</option>
+                            <option value="109"> University of Barisal </option>
+                            <option value="10"> Ahsanullah University of Science and Technology </option>
+                            <option value="74"> America Bangladesh University </option>
+                            <option value="52"> American International University-Bangladesh </option>
+                            <option value="11"> Asian University of Bangladesh </option>
+                            <option value="57"> Atish Dipankar University of Science and Technology </option>
+                            <option value="12"> Bangabandhu Sheikh Mujibur Rahman Agricultural University </option>
+                            <option value="102"> Bangabandhu Sheikh Mujibur Rahman Science &amp; Technology
+                                University </option>
+                            <option value="13"> Bangladesh Agricultural University </option>
+                            <option value="14"> Bangladesh Institute of Management Studies </option>
+                            <option value="53"> Bangladesh Islami University </option>
+                            <option value="92"> Bangladesh University </option>
+                            <option value="15"> Bangladesh University of Engineering &amp; Technology </option>
+                            <option value="16"> Bangladesh University of Professionals </option>
+                            <option value="107"> Bangladesh University of Textiles </option>
+                            <option value="88"> Begum Rokeya University, Rangpur </option>
+                            <option value="17"> BGC Trust University Bangladesh, Chittagong </option>
+                            <option value="94"> BGMEA Institute of Fashion and Technology </option>
+                            <option value="69"> BUBT </option>
+                            <option value="117"> Chittagong Independent University </option>
+                            <option value="18"> Chittagong University of Engineering &amp; Technology </option>
+                            <option value="116"> Chittagong Veterinary and Animal Sciences University </option>
+                            <option value="83"> City University </option>
+                            <option value="78"> Comilla University </option>
+                            <option value="19"> Daffodil International University </option>
+                            <option value="20"> Darul Ihsan University </option>
+                            <option value="21"> Dhaka International University </option>
+                            <option value="48"> Dhaka University of Engineering &amp; Technology </option>
+                            <option value="71"> East Delta University </option>
+                            <option value="22"> East West University </option>
+                            <option value="73"> Eastern University </option>
+                            <option value="23"> Edexcel London </option>
+                            <option value="24"> English </option>
+                            <option value="108"> European University of Bangladesh </option>
+                            <option value="98"> Feni University </option>
+                            <option value="85"> Green University </option>
+                            <option value="25"> Hajee Mohammad Danesh Science &amp; Technology University </option>
+                            <option value="84"> Hamdard University </option>
+                            <option value="72"> IBAIS </option>
+                            <option value="26"> IBTRA </option>
+                            <option value="27"> IDB-BISEW </option>
+                            <option value="28"> International Islamic University Chittagong </option>
+                            <option value="82"> International Islamic University, Malaysia </option>
+                            <option value="93"> Islami University of Technilogy </option>
+                            <option value="81"> Islamic University of Technology </option>
+                            <option value="29"> Islamic University </option>
+                            <option value="65"> IUB </option>
+                            <option value="59"> IUBAT </option>
+                            <option value="30"> Jagannath University </option>
+                            <option value="31"> Jahangirnagar University </option>
+                            <option value="112"> Jashore University of Science and Technology </option>
+                            <option value="32"> Jatiya Kabi Kazi Nazrul Islam University </option>
+                            <option value="33"> Khulna University </option>
+                            <option value="47"> Khulna University of Engineering &amp; Technology </option>
+                            <option value="34"> Leading University </option>
+                            <option value="35"> Manarat International University </option>
+                            <option value="36"> Mawlana Bhashani Science and Technology University </option>
+                            <option value="79"> Metropolitan University, Sylhet </option>
+                            <option value="37"> National University </option>
+                            <option value="86"> Netaji Shuvash Eng. College </option>
+                            <option value="38"> Noakhali Science and Technology University </option>
+                            <option value="56"> North South University </option>
+                            <option value="39"> Northern University Bangladesh </option>
+                            <option value="103"> Open University </option>
+                            <option value="40"> Other </option>
+                            <option value="100"> Pabna University of Science &amp; Technology </option>
+                            <option value="110"> Patuakhali Science &amp; Technology University </option>
+                            <option value="114"> Port City International University </option>
+                            <option value="97"> Premier University,Chittagong </option>
+                            <option value="70"> Presidency University </option>
+                            <option value="67"> Prime University </option>
+                            <option value="76"> Primeasia University </option>
+                            <option value="111"> Pundra University of Science and Technology </option>
+                            <option value="89"> Queen Mary University of London </option>
+                            <option value="49"> Rajshahi University of Engineering &amp; Technology </option>
+                            <option value="41"> Shahjalal University of Science and Technology </option>
+                            <option value="42"> Sher-e-Bangla Agricultural University </option>
+                            <option value="80"> Sonargaon University </option>
+                            <option value="77"> Southeast University </option>
+                            <option value="90"> Southern University,Chittagong </option>
+                            <option value="43"> Stamford University Bangladesh </option>
+                            <option value="104"> State University of Bangladesh </option>
+                            <option value="91"> Sylhet Agricultural University </option>
+                            <option value="58"> Sylhet International University </option>
+                            <option value="64"> UITS </option>
+                            <option value="68"> United International University </option>
+                            <option value="75"> University of Asia Pacific </option>
+                            <option value="44"> University of Chittagong </option>
+                            <option value="113"> University of Creative Technology, Chittagong </option>
+                            <option value="63"> University of Development Alternative </option>
+                            <option value="45"> University of Dhaka </option>
+                            <option value="115"> University of Information Technology &amp; Sciences </option>
+                            <option value="62"> University of Liberal Arts Bangladesh </option>
+                            <option value="46"> University of Rajshahi </option>
+                            <option value="99"> University of South Asia </option>
+                            <option value="55"> USTC </option>
+                            <option value="101"> Victoria University of Bangladesh </option>
+                            <option value="60"> World University </option>
+                        </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="result"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Result</label>
+                    <div class="flex justify-center">
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">CGPA</label>
+                        <input tabindex="0" type="number" id="result" name="result" required
+                            class="border border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                            placeholder="" />
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">Out
+                            Of</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full -mt-3 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">out of</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Passing
+                        Year</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Course
+                        Duration</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- masters start -->
+        <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+            <div class="flex items-center">
+                <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 ">
+                <label for="link-checkbox"
+                    class="w-full pl-3 py-2 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">If
+                    Applicable</label>
+            </div>
+            <div class="xl:w-full border-b border-gray-400 py-5">
+                <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                    <p class="text-lg text-gray-800 font-bold">Masters / Equivalent Level</p>
+                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <img class="dark:hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                    </div>
+                </div>
+            </div>
+        <div class="mx-auto pt-4">
+                <div class="container mx-auto">
+                    <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Examination</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Examination</option>
+                                <option value=""> B. Sc. (Pass) </option>
+                                <option value=""> B.B.A. </option>
+                                <option value=""> B.S.S. (Hons) </option>
+                                <option value=""> B.Sc. (Hon''s) </option>
+                                <option value=""> B.Sc. Engg. </option>
+                                <option value=""> Bachelor </option>
+                                <option value=""> Bachelor 4yrs </option>
+                                <option value=""> M.A. </option>
+                                <option value=""> M.B.A. </option>
+                                <option value=""> M.B.M. </option>
+                                <option value=""> M.S.S </option>
+                                <option value=""> M.Sc. Engg. </option>
+                                <option value=""> Master of Science </option>
+                                <option value=""> Masters </option>
+                            </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                            <label for="Examination"
+                                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Subject
+                                / Degree</label>
+                            <select name="dExamination" id="Examination"
+                                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                                <option value="" selected="selected">Select Subject</option>
+                                <option value=""> Accounting </option>
+                                <option value=""> Accounting &amp; Information System </option>
+                                <option value=""> Aeronautical Engineering </option>
+                                <option value=""> Agribusiness Management </option>
+                                <option value=""> Agricultural Economics </option>
+                                <option value=""> Agricultural Extension Education </option>
+                                <option value=""> Agricultural Science </option>
+                                <option value=""> Agriculture </option>
+                                <option value=""> Agronomy </option>
+                                <option value=""> Al-Quran &amp; Islamic Studies </option>
+                                <option value=""> Animal Husbandry </option>
+                                <option value=""> Anthropology </option>
+                                <option value=""> Applied Chemistry &amp; Chemical Technology </option>
+                                <option value=""> Applied Mathematics </option>
+                                <option value=""> Applied Physics &amp; Electronics </option>
+                                <option value=""> Applied Statistics </option>
+                                <option value=""> Arabic </option>
+                                <option value=""> Archaeology </option>
+                                <option value=""> Architecture </option>
+                                <option value=""> Architecture Technology </option>
+                                <option value=""> Arts </option>
+                                <option value=""> Automobile Engineering </option>
+                                <option value=""> B.Sc in Computer Science </option>
+                                <option value=""> B.Sc in ETE </option>
+                                <option value=""> B.Sc in Information &amp; Communication Technology </option>
+                                <option value=""> B.Sc in Information Technology </option>
+                                <option value=""> B.Sc in MIS </option>
+                                <option value=""> B.Sc in Software Engineering </option>
+                                <option value=""> Banking </option>
+                                <option value=""> Banking &amp; Insurance </option>
+                                <option value=""> Bengali </option>
+                                <option value=""> Biochemistry &amp; Molecular Biology </option>
+                                <option value=""> Biotecnology &amp; Genetic Engineering </option>
+                                <option value=""> Botany </option>
+                                <option value=""> BSS </option>
+                                <option value=""> Business Studies </option>
+                                <option value=""> Business studies </option>
+                                <option value=""> Chemical Engineering </option>
+                                <option value=""> Chemistry </option>
+                                <option value=""> Civil Engineering </option>
+                                <option value=""> Commerce </option>
+                                <option value=""> Communication and Journalism </option>
+                                <option value=""> Computer &amp; Communication Engineering </option>
+                                <option value=""> Computer Operation </option>
+                                <option value=""> Computer Science </option>
+                                <option value=""> Computer Science &amp; Engineering </option>
+                                <option value=""> Crop Botany </option>
+                                <option value=""> CSIT </option>
+                                <option value=""> Dairy science </option>
+                                <option value=""> Development Studies </option>
+                                <option value=""> Disaster Management </option>
+                                <option value=""> Economics </option>
+                                <option value=""> Education </option>
+                                <option value=""> Electrical &amp; Communication Engineering </option>
+                                <option value=""> Electrical &amp; Electronic Engineering </option>
+                                <option value=""> Electronic &amp; Communication Engineering </option>
+                                <option value=""> Electronic &amp; Telecommunication </option>
+                                <option value=""> Electronics </option>
+                                <option value=""> English </option>
+                                <option value=""> English Language &amp; Literature </option>
+                                <option value=""> Entomology </option>
+                                <option value=""> Environmental Science </option>
+                                <option value=""> Fashion Design </option>
+                                <option value=""> Finance </option>
+                                <option value=""> Finance &amp; Accounting </option>
+                                <option value=""> Finance &amp; Banking </option>
+                                <option value=""> Fish Processing &amp; Quality Control </option>
+                                <option value=""> Fisheries </option>
+                                <option value=""> Food &amp; Process Engineering </option>
+                                <option value=""> Food Engineering </option>
+                                <option value=""> Food Processing &amp; Preservati </option>
+                                <option value=""> Food Technology &amp; Nutritional Science </option>
+                                <option value=""> Forestry </option>
+                                <option value=""> Forestry &amp; Environmental Science </option>
+                                <option value=""> General </option>
+                                <option value=""> General </option>
+                                <option value=""> General Electrical Work </option>
+                                <option value=""> Genetic Engineering &amp; Biotechnology </option>
+                                <option value=""> Geography </option>
+                                <option value=""> Geography &amp; Environment </option>
+                                <option value=""> Geological Science </option>
+                                <option value=""> Govt. &amp; Politics </option>
+                                <option value=""> Hadith </option>
+                                <option value=""> Health Economics </option>
+                                <option value=""> History </option>
+                                <option value=""> Home Economics </option>
+                                <option value=""> Horticulture </option>
+                                <option value=""> Human Resource Management </option>
+                                <option value=""> Humanities </option>
+                                <option value=""> Industrial and Production Engineering </option>
+                                <option value=""> Information &amp; Communication Technology </option>
+                                <option value=""> Information Science &amp; Library </option>
+                                <option value=""> Information Tecnology </option>
+                                <option value=""> International Business </option>
+                                <option value=""> International Management </option>
+                                <option value=""> International Relations </option>
+                                <option value=""> Islamic History &amp; Culture </option>
+                                <option value=""> Islamic Studies </option>
+                                <option value="1"> Languistics </option>
+                                <option value=""> Law </option>
+                                <option value=""> Leather Engineering &amp; Technology </option>
+                                <option value=""> Management </option>
+                                <option value=""> Management Information System </option>
+                                <option value=""> Management Studies </option>
+                                <option value=""> Marine Engineering </option>
+                                <option value=""> Marine Science </option>
+                                <option value=""> Marketing </option>
+                                <option value=""> Mass Communication &amp; Journalis </option>
+                                <option value=""> Mathematics </option>
+                                <option value=""> Mechanical Engineering </option>
+                                <option value=""> Mechanical Technology </option>
+                                <option value=""> Mechatronics </option>
+                                <option value=""> Microbiology </option>
+                                <option value=""> MSS </option>
+                                <option value=""> Operations &amp; Supply Chain Management </option>
+                                <option value=""> Other </option>
+                                <option value=""> Peace &amp; Conflict Studies </option>
+                                <option value=""> Petrolium and Mining Engineering </option>
+                                <option value=""> Pharmacy </option>
+                                <option value=""> Philosophy </option>
+                                <option value=""> Physics </option>
+                                <option value=""> Political Science </option>
+                                <option value=""> Population Science &amp; Human Resource </option>
+                                <option value=""> Psychology </option>
+                                <option value=""> Public Administration </option>
+                                <option value=""> Quranic Science &amp; Islamic Studies </option>
+                                <option value=""> Science </option>
+                                <option value=""> Social Welfare </option>
+                                <option value=""> Social Work </option>
+                                <option value=""> Sociology </option>
+                                <option value=""> Soil, Water &amp; Environment </option>
+                                <option value=""> Statistics </option>
+                                <option value=""> Supply Chain Management </option>
+                                <option value=""> Sylhet Agricultural University </option>
+                                <option value=""> Textile Engineering </option>
+                                <option value=""> Textile Technology </option>
+                                <option value=""> Tourism &amp; Hospitality Management </option>
+                                <option value=""> Urban &amp; Regional Planning </option>
+                                <option value=""> Veterinary Medicine </option>
+                                <option value=""> Zoology </option>
+                            </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                        <label for="board"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">University
+                            / Institute</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">Select University</option>
+                            <option value="109"> University of Barisal </option>
+                            <option value="10"> Ahsanullah University of Science and Technology </option>
+                            <option value="74"> America Bangladesh University </option>
+                            <option value="52"> American International University-Bangladesh </option>
+                            <option value="11"> Asian University of Bangladesh </option>
+                            <option value="57"> Atish Dipankar University of Science and Technology </option>
+                            <option value="12"> Bangabandhu Sheikh Mujibur Rahman Agricultural University </option>
+                            <option value="102"> Bangabandhu Sheikh Mujibur Rahman Science &amp; Technology
+                                University </option>
+                            <option value="13"> Bangladesh Agricultural University </option>
+                            <option value="14"> Bangladesh Institute of Management Studies </option>
+                            <option value="53"> Bangladesh Islami University </option>
+                            <option value="92"> Bangladesh University </option>
+                            <option value="15"> Bangladesh University of Engineering &amp; Technology </option>
+                            <option value="16"> Bangladesh University of Professionals </option>
+                            <option value="107"> Bangladesh University of Textiles </option>
+                            <option value="88"> Begum Rokeya University, Rangpur </option>
+                            <option value="17"> BGC Trust University Bangladesh, Chittagong </option>
+                            <option value="94"> BGMEA Institute of Fashion and Technology </option>
+                            <option value="69"> BUBT </option>
+                            <option value="117"> Chittagong Independent University </option>
+                            <option value="18"> Chittagong University of Engineering &amp; Technology </option>
+                            <option value="116"> Chittagong Veterinary and Animal Sciences University </option>
+                            <option value="83"> City University </option>
+                            <option value="78"> Comilla University </option>
+                            <option value="19"> Daffodil International University </option>
+                            <option value="20"> Darul Ihsan University </option>
+                            <option value="21"> Dhaka International University </option>
+                            <option value="48"> Dhaka University of Engineering &amp; Technology </option>
+                            <option value="71"> East Delta University </option>
+                            <option value="22"> East West University </option>
+                            <option value="73"> Eastern University </option>
+                            <option value="23"> Edexcel London </option>
+                            <option value="24"> English </option>
+                            <option value="108"> European University of Bangladesh </option>
+                            <option value="98"> Feni University </option>
+                            <option value="85"> Green University </option>
+                            <option value="25"> Hajee Mohammad Danesh Science &amp; Technology University </option>
+                            <option value="84"> Hamdard University </option>
+                            <option value="72"> IBAIS </option>
+                            <option value="26"> IBTRA </option>
+                            <option value="27"> IDB-BISEW </option>
+                            <option value="28"> International Islamic University Chittagong </option>
+                            <option value="82"> International Islamic University, Malaysia </option>
+                            <option value="93"> Islami University of Technilogy </option>
+                            <option value="81"> Islamic University of Technology </option>
+                            <option value="29"> Islamic University </option>
+                            <option value="65"> IUB </option>
+                            <option value="59"> IUBAT </option>
+                            <option value="30"> Jagannath University </option>
+                            <option value="31"> Jahangirnagar University </option>
+                            <option value="112"> Jashore University of Science and Technology </option>
+                            <option value="32"> Jatiya Kabi Kazi Nazrul Islam University </option>
+                            <option value="33"> Khulna University </option>
+                            <option value="47"> Khulna University of Engineering &amp; Technology </option>
+                            <option value="34"> Leading University </option>
+                            <option value="35"> Manarat International University </option>
+                            <option value="36"> Mawlana Bhashani Science and Technology University </option>
+                            <option value="79"> Metropolitan University, Sylhet </option>
+                            <option value="37"> National University </option>
+                            <option value="86"> Netaji Shuvash Eng. College </option>
+                            <option value="38"> Noakhali Science and Technology University </option>
+                            <option value="56"> North South University </option>
+                            <option value="39"> Northern University Bangladesh </option>
+                            <option value="103"> Open University </option>
+                            <option value="40"> Other </option>
+                            <option value="100"> Pabna University of Science &amp; Technology </option>
+                            <option value="110"> Patuakhali Science &amp; Technology University </option>
+                            <option value="114"> Port City International University </option>
+                            <option value="97"> Premier University,Chittagong </option>
+                            <option value="70"> Presidency University </option>
+                            <option value="67"> Prime University </option>
+                            <option value="76"> Primeasia University </option>
+                            <option value="111"> Pundra University of Science and Technology </option>
+                            <option value="89"> Queen Mary University of London </option>
+                            <option value="49"> Rajshahi University of Engineering &amp; Technology </option>
+                            <option value="41"> Shahjalal University of Science and Technology </option>
+                            <option value="42"> Sher-e-Bangla Agricultural University </option>
+                            <option value="80"> Sonargaon University </option>
+                            <option value="77"> Southeast University </option>
+                            <option value="90"> Southern University,Chittagong </option>
+                            <option value="43"> Stamford University Bangladesh </option>
+                            <option value="104"> State University of Bangladesh </option>
+                            <option value="91"> Sylhet Agricultural University </option>
+                            <option value="58"> Sylhet International University </option>
+                            <option value="64"> UITS </option>
+                            <option value="68"> United International University </option>
+                            <option value="75"> University of Asia Pacific </option>
+                            <option value="44"> University of Chittagong </option>
+                            <option value="113"> University of Creative Technology, Chittagong </option>
+                            <option value="63"> University of Development Alternative </option>
+                            <option value="45"> University of Dhaka </option>
+                            <option value="115"> University of Information Technology &amp; Sciences </option>
+                            <option value="62"> University of Liberal Arts Bangladesh </option>
+                            <option value="46"> University of Rajshahi </option>
+                            <option value="99"> University of South Asia </option>
+                            <option value="55"> USTC </option>
+                            <option value="101"> Victoria University of Bangladesh </option>
+                            <option value="60"> World University </option>
+                        </select>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="result"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Result</label>
+                    <div class="flex justify-center">
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">CGPA</label>
+                        <input tabindex="0" type="number" id="result" name="result" required
+                            class="border border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                            placeholder="" />
+                        <label for="result"
+                            class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-sm font-semibold text-gray-800 ">Out
+                            Of</label>
+                        <select name="dExamination" id="Examination"
+                            class="border border-gray-400 w-full -mt-3 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600">
+                            <option value="" selected="selected">out of</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Passing
+                        Year</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                <div class="flex flex-col sm:flex-none mb-6">
+                    <label for="passingYear"
+                        class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Course
+                        Duration</label>
+                    <input tabindex="0" type="number" id="rpassingYear" name="passingYear" required
+                        class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                        placeholder="" />
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- upload Attachment -->
+    <div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+        <div class="xl:w-full border-b border-gray-400 py-5">
+            <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                <p class="text-lg text-gray-800 font-bold">Upload Attachment</p>
+                <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                    <img class="dark:hidden"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                    <img class="dark:block hidden"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                </div>
+            </div>
+        </div>
+    <div class="mx-auto pt-4">
+            <div class="container mx-auto">
+                <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload Photo <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 100 KB with dimension of 300x300 pixel]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload Signature <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 50 KB with dimension of 300x80 pixel]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload National ID Card <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 200 KB]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload SSC Certificate <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 200 KB]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload HSC Certificate <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 200 KB]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload Honors Certificate <span class="text-red-500">*</span></label>
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 200 KB]</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="xl:w-1/4 lg:w-1/2 md:w-1/2 pb-2 text-lg font-semibold text-gray-800 p-1">Upload Masteres Certificate 
+                        <div class="flex">
+                            <input
+                          class="block text-sm p-1 text-gray-900 rounded-md cursor-pointer"
+                          aria-describedby="file_input_help" id="file_input" type="file">
+                        <p class="p-1 text-sm text-gray-500" id="file_input_help">[ JPG, JPEG, PNG and not more than 200 KB]</p>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- job experience -->
+<div class="container mx-auto mt-10 px-10 rounded border border-orange-600">
+    <div class="flex items-center">
+        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 ">
+        <label for="link-checkbox"
+            class="w-full pl-3 py-2 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">If
+            Applicable</label>
+    </div>
+    <div class="xl:w-full border-b border-gray-400 py-5">
+        <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+            <p class="text-lg text-gray-800 font-bold">Job Experience</p>
+            <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                <img class="dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                <img class="dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+            </div>
+        </div>
+    </div>
+<div class="mx-auto pt-4">
+        <div class="container mx-auto">
+            <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+        <div class="flex flex-col sm:flex-none mb-6">
+            <label for="organization"
+                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Organization</label>
+            <input tabindex="0" type="text" id="organization" name="organization" required
+                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                placeholder="" />
+        </div>
+        <div class="flex flex-col sm:flex-none mb-6">
+            <label for="degignation"
+                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Designation / Post</label>
+            <input tabindex="0" type="text" id="degignation" name="degignation" required
+                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                placeholder="" />
+        </div>
+        <div class="flex flex-col sm:flex-none mb-6">
+            <label for="result"
+                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 mb-2 ">Length of Service</label>
+            <div class="flex justify-center">
+                <input tabindex="0" type="date" id="date" name="date" required
+                    class="border border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                    placeholder="" />
+                <label for="result"
+                    class="xl:w-1/4 lg:w-1/2 md:w-1/2 sm:ml-20 ml-0 pb-2 text-sm font-semibold text-gray-800 "> TO</label>
+                    <input tabindex="0" type="date" id="date" name="date" required
+                    class="border  border-gray-400 w-full -mt-3 mr-0.5 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                    placeholder="" />
+                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 mt-2 ml-2">
+                        <label for="link-checkbox"
+                            class="w-full pl-3 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">Currently Working</label>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-none mb-6">
+            <label for="address"
+                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Address</label>
+            <input tabindex="0" type="text" id="address" name="address" required
+                class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"
+                placeholder="" />
+        </div>
+        <div class="flex flex-col sm:flex-none mb-6">
+            <label for="address"
+                class="xl:w-1/4 lg:w-1/2 md:w-1/2  pb-2 text-lg font-semibold text-gray-800 ">Responsibility</label>
+                <textarea id="message" rows="4" class="border border-gray-400 w-full pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-orange-600  text-gray-600"></textarea>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+<div class="flex items-center">
+    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 ">
+    <label for="link-checkbox"
+        class="w-full pl-3 pt-6 rounded text-lg focus:outline-none focus:border-orange-600  text-gray-600">I hereby declare that the information provided above are correct, true and complete to the best of my knowledge and belief. And I would like to go to the nest step.</label>
+</div>
+<div class="text-center mt-2">
+    <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Submit</button>
+</div>
+
+
+    </div>
+    </div>
+    </div>
+    <!-- application form end   -->
+
+    <!-- footer start -->
+    <footer aria-label="Site Footer" class=" py-1 border-t-2 border-blue-300">
+        <div class="max-w-screen-xl px-4 pt-10 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div>
+                    <div class="text-teal-600">
+                        <a href="" class="flex items-center">
+                            <img src="/img/logo.jpg" class="w-24 h-16" alt="logo">
+
+                            <span
+                                class="self-center text-2xl font-semibold whitespace-nowrap text-blue-500 -ml-5 underline">IbrahimBaba<span>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-2 my-10">
+                        <div class="flex items-center border bg-black text-white w-auto rounded-lg px-4 py-2 w-52 ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8">
+                            <div class="text-left ml-3">
+                                <p class='text-xs text-gray-200'>Download on </p>
+                                <p class="text-sm md:text-base"> Google Play Store </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center border bg-black text-white w-auto rounded-lg px-4 py-2 w-52 ">
+                            <svg class="w-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                                </path>
+                            </svg>
+                            <div class="text-left ml-3">
+                                <p class='text-xs text-gray-200'>Download on </p>
+                                <p class="text-sm md:text-base"> Apple Store </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+                    <!-- company start -->
+                    <div>
+                        <p class="font-medium text-blue-500 underline underline-offset-4">Company</p>
+
+                        <nav aria-label="Footer Navigation - Company" class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Our Branch Office
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Our Merchant
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        All Our MPO
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Job Apply
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Winner List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- company end -->
+
+                    <!-- helpful start -->
+                    <div>
+                        <p class="font-medium text-blue-500 underline underline-offset-4">Helpful Links</p>
+
+                        <nav aria-label="Footer Navigation - Company" class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Complaint
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" rel="noreferrer" target="_blank" class="text-blue-700 flex">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                                clip-rule="evenodd" />
+                                        </svg><span class="text-gray-700 ml-1 hover:text-blue-500">Facebook
+                                            Page</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" rel="noreferrer" target="_blank" class="text-blue-700 flex">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                                clip-rule="evenodd" />
+                                        </svg><span class="text-gray-700 ml-1 hover:text-blue-500">Facebook
+                                            Group</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" rel="noreferrer" target="_blank" class="text-pink-500 flex">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                                clip-rule="evenodd" />
+                                        </svg><span class="text-gray-700 ml-1 hover:text-blue-500">Instagram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" rel="noreferrer" target="_blank" class="text-indigo-500 flex">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path
+                                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                        </svg><span class="text-gray-700 ml-1 hover:text-blue-500">Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- helpful end -->
+
+                    <!-- legal start -->
+                    <div>
+                        <p class="font-medium text-blue-500 underline underline-offset-4">Legal</p>
+
+                        <nav aria-label="Footer Navigation - Legal" class="mt-6">
+                            <ul class="space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Accessibility
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Returns Policy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Refund Policy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:text-blue-500">
+                                        Hiring Statistics
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- legal end -->
+
+                    <!-- contact start -->
+                    <div>
+                        <p class="font-medium text-blue-500 underline underline-offset-4">Contact Us</p>
+
+                        <ul class="mt-8 space-y-4 text-sm">
+                            <li>
+                                <a class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                    href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-blue-500"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+
+                                    <span
+                                        class="flex-1 text-gray-700 transition hover:text-blue-500">john@doe.com</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                    href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-blue-500"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+
+                                    <span class="flex-1 text-gray-700 transition hover:text-blue-500">0123456789</span>
+                                </a>
+                            </li>
+
+                            <li class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-blue-500"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+                                <address class="-mt-0.5 flex-1 not-italic text-gray-700 transition hover:text-blue-500">
+                                    213 Lane, London, United Kingdom
+                                </address>
+                    </div>
+                    <!-- contact end -->
+
+                </div>
+            </div>
+
+            <p class="text-sm font-bold text-center text-gray-500">
+                &copy; 2023. <span class="text-blue-500">IbrahimBaba.</span> All rights reserved.
+            </p>
+            <div>
+                <div class="relative">
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank" class="fixed right-0 bottom-0">
+
+                        <img class="w-14 h-14 mr-12 mb-6" src="/img/Messenger.png" alt="">
+                </div>
+                <div class="relative">
+                    <a href="https://www.whatsapp.com/" rel="noreferrer" target="_blank" class="fixed right-0 bottom-0">
+
+                        <img class="w-12 h-12 mr-3 mb-16" src="/img/whatsapp.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- footer end -->
+
+    <!-- Flowbite CDN -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
