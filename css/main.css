@@ -36,7 +36,7 @@
   
   .logos-slide {
     display: inline-block;
-    animation: 50s slide infinite linear;
+    animation: 60s slide infinite linear;
   }
 
    .logos-slide img {
@@ -73,7 +73,7 @@
 
 .scroll-slide {
   display: inline-block;
-  animation: 60s slide infinite linear;
+  animation: 40s slide infinite linear;
 }
 /* scroll design end */
 
