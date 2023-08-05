@@ -11,105 +11,77 @@
 
 <body>
     <!-- main navbar start -->
-    <section id="nav">
-        <nav class="bg-gray-50 fixed w-full z-20 py-2 px-2 sm:px-0 top-0 left-0 border-b border-gray-200">
-            <div class="max-w-screen-xl flex text-center items-center justify-between mx-auto">
-                <div class="flex items-center">
-                    <div class="flex">
-                        <img src="/img/logo.jpg" class="h-14 sm:-ml-5  ml-0" alt="">
-                        <P class="mt-4 -ml-5 text-2xl text-orange-500 font-semibold">IBRAHIMBABA</P>
-                    </div>
-                    <div>
-                        <img src="/img/free delivery.png" class="h-16 ml-10 hidden sm:flex" alt="">
-                    </div>
-                </div>
+    <nav class="bg-gray-50 fixed w-full z-20 py-2 px-2 sm:px-0 top-0 left-0 border-b border-gray-200">
 
-                <form class="hidden sm:flex items-center">
-                    <label for="simple-search" class="sr-only">Search</label>
-                    <div class="relative w-full">
-                        <input type="search"
-                            class="block p-2.5 text-sm  rounded-r-lg rounded-lg w-80 border border-pink-600"
-                            placeholder="Search">
-                        <button type="submit"
-                            class="absolute top-0 right-0 p-[11px] text-sm font-medium text-white rounded-r-lg  inline-flex  justify-center overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-gradient-to-l">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                            <span class="sr-only">Search</span>
-                        </button>
-                    </div>
-                </form>
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mt-3 mb-3">
+            <a class="flex items-center">
+                <img src="/img/life_partner/logo.png" class="w-14 h-14" alt="logo">
+
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-500 ml-5">Life
+                    Partner</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="flex md:p-0 mt-4 font-medium rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-50">
-                    <li
-                        class="relative inline-flex items-center justify-center w-10 h-10 text-lg rounded-full text-pink-500 mt-5 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                        </svg>
-                        <span
-                            class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-red-500 px-1.5 text-sm text-white">
-                            1
-                        </span>
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4"
+                            aria-current="page">Home</a>
                     </li>
-
-                    <li
-                        class="relative inline-flex items-center justify-center w-10 h-10 text-lg rounded-full text-pink-500 mt-5 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
-                        </svg>
-                        <span
-                            class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-red-500 px-1.5 text-sm text-white">
-                            5
-                        </span>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Search
+                            Partner</a>
                     </li>
-
-                    <li
-                        class="relative inline-flex items-center justify-center w-10 h-10 text-lg rounded-full text-pink-500 mt-5 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                        </svg>
-                        <span
-                            class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-red-500 px-1.5 text-sm text-white">
-                            2
-                        </span>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Success
+                            Stories</a>
                     </li>
-                    <li
-                        class="relative inline-flex items-center justify-center w-10 h-10 text-lg rounded-full text-pink-500 mt-5 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
-                        </svg>
-                        <span
-                            class="absolute -top-1.5 -right-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-red-500 px-1.5 text-sm text-white">
-                            1
-                        </span>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Contact
+                            Us</a>
                     </li>
-                    <li class="items-center text-sm font-medium text-center text-gray-900 pr-2 pt-2 pb-1 pl-8 rounded-lg border border-pink-700  cursor-pointer"
-                        type="button">
-                        <img class="w-[50px] h-[50px]" src="/img/user.jpg" alt="" /><span class="-ml-4 font-bold">My
-                            Account</span>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Live
+                            Chat</a>
+                    </li>
+                    <li data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+                        class="flex text-white bg-cyan-600 rounded md:bg-transparent md:text-cyan-700 border border-cyan-700 px-5 py-[1px] text-center items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 mr-1">
+                            <path fill-rule="evenodd"
+                                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        My Account
                     </li>
                 </ul>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>n>
     <!-- main navbar end -->
 
     <!-- sidebar start -->
     <section id="sidebar">
-        <div class="mt-28 mb-3">
+        <div class="mt-20 mb-3">
             <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
                 aria-controls="sidebar-multi-level-sidebar" type="button"
-                class="inline-flex items-center p-2 mt-8 ml-3 text-sm text-pink-600 rounded-lg sm:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 mb-1">
+                class="inline-flex items-center p-2  ml-3 text-sm text-cyan-600 rounded-lg sm:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 mb-1">
                 <span class="sr-only">Open sidebar</span>
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
@@ -120,44 +92,30 @@
             </button>
 
             <aside id="sidebar-multi-level-sidebar"
-                class="fixed top-[92px] left-0 z-40 w-46 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-50"
+                class="fixed top-[92px] left-0 z-40 w-52 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-50"
                 aria-label="Sidebar">
-                <div class="h-full mt-3 overflow-y-auto">
-                    <ul class="space-y-2 font-medium">
-                        <!-- search start -->
-                        <li class="pl-1 pr-1">
-                            <label for="simple-search" class="sr-only">Search</label>
-                            <div class="relative w-full">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor"
-                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <input type="text" id="simple-search"
-                                    class="border border-pink-600  text-sm rounded-lg block w-full pl-10 p-2.5"
-                                    placeholder="Search" required />
-                            </div>
-                        </li>
-                        <!-- search end -->
 
-                        <!-- our service start -->
-                        <li>
+                <div class="h-full mt-3 overflow-y-auto">
+                    <div class="text-center text-cyan-600 font-semibold underline underline-offset-4">
+                        <h1>Partner Search</h1>
+                    </div>
+
+                    <ul class="space-y-2 font-medium">
+                        <!-- primary start -->
+                        <li class="p-2">
                             <button type="button"
                                 class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg hover:bg-gray-200 group"
                                 aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                                        d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
                                 </svg>
+
 
                                 <span
                                     class="flex-1 ml-3 text-left font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                    sidebar-toggle-item>Our
-                                    Services</span>
+                                    sidebar-toggle-item>Primary</span>
                                 <span class="group-focus:-rotate-180">
                                     <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -166,752 +124,158 @@
                                             clip-rule="evenodd"></path>
                                     </svg>
                                 </span>
-
-
                             </button>
                             <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                                <!-- daily bazar start -->
+                                <!-- looking start -->
                                 <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example2">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 " fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Daily
-                                            Bazar</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example2" class="hidden py-2 space-y-2">
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Daily
-                                                Bazar 1
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Daily
-                                                Bazar 2
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Daily
-                                                Bazar 3
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-
-                                        </li>
-                                    </ul>
+                                    <div class="p-2">
+                                        <label for="occupation"
+                                            class="block ml-2 mb-1 text-sm font-medium text-cyan-600">
+                                            I'm looking for
+                                        </label>
+                                        <select name="occupation" id="occupation"
+                                            class="w-full rounded-lg bg-gray-200 text-gray-500 p-3 text-sm">
+                                            <option value="">All</option>
+                                            <option value="">Male's Biodata</option>
+                                            <option value="">Female's Biodata</option>
+                                        </select>
+                                    </div>
                                 </li>
-                                <!-- daily bazar end -->
-
-                                <!-- hobby shopping start -->
+                                <!-- looking end -->
+                                <!-- marital start -->
                                 <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Hobby
-                                            Shopping</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example3" class="hidden py-2 space-y-2">
-                                        <li>
-                                            <button type="button"
-                                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                                aria-controls="dropdown-example"
-                                                data-collapse-toggle="dropdown-example4">
-                                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6  "
-                                                    fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span
-                                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                                    sidebar-toggle-item>Hobby
-                                                    Shopping Quickly</span>
-                                                <span class="group-focus:-rotate-180">
-                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd"
-                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                            clip-rule="evenodd"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                            <ul id="dropdown-example4" class="hidden py-2 space-y-2">
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                        Shopping Quickly 1
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                            fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                        Shopping Quickly2
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                            fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                        Shopping Quickly 3
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                            fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                Shopping 1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                Shopping 2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group ">Hobby
-                                                Shopping 3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="p-2">
+                                        <label for="occupation"
+                                            class="block ml-2 mb-1 text-sm font-medium text-cyan-600">
+                                            Marital Status
+                                        </label>
+                                        <select name="occupation" id="occupation"
+                                            class="w-full rounded-lg bg-gray-200 text-gray-500 p-3 text-sm">
+                                            <option value="">All</option>
+                                            <option value="">Never Married</option>
+                                            <option value="">Married</option>
+                                            <option value="">Divorced/option>
+                                            <option value="">Widow</option>
+                                            <option value="">Widower</option>
+                                        </select>
+                                    </div>
                                 </li>
-                                <!-- hobby shopping end -->
-
-                                <!-- wholesale market start -->
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example5">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 " fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Wholesale
-                                            Market</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example5" class="hidden py-2 space-y-2">
-                                        <li>
-                                            <button type="button"
-                                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                                aria-controls="dropdown-example"
-                                                data-collapse-toggle="dropdown-example6">
-                                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 "
-                                                    fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span
-                                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                                    sidebar-toggle-item>Wholesale Market
-                                                    Quickly</span>
-                                                <span class="group-focus:-rotate-180">
-                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd"
-                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                            clip-rule="evenodd"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                            <ul id="dropdown-example6" class="hidden py-2 space-y-2">
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                        Market Quickly 1 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                        Market Quickly2 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                        Market Quickly 3 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                Market 1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                Market 2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Wholesale
-                                                Market 3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- wholesale market start -->
-
-                                <!--  emergency order start -->
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example7">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Emergency
-                                            Order</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example7" class="hidden py-2 space-y-2">
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Emergency
-                                                Order 1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Emergency
-                                                Order 2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Emergency
-                                                Order 3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- emergency order end -->
-
-                                <!-- medical care start -->
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example8">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Medical
-                                            Care</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example8" class="hidden py-2 space-y-2">
-                                        <li>
-                                            <button type="button"
-                                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                                aria-controls="dropdown-example"
-                                                data-collapse-toggle="dropdown-example9">
-                                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6"
-                                                    fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span
-                                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                                    sidebar-toggle-item>Medical Care
-                                                    Quickly</span>
-                                                <span class="group-focus:-rotate-180">
-                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd"
-                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                            clip-rule="evenodd"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                            <ul id="dropdown-example9" class="hidden py-2 space-y-2">
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                        Care Quickly 1 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                        Care Quickly 2 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                        Care Quickly 3 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                Care 1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                Care 2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Medical
-                                                Care 3
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- medical care end -->
-
-                                <!-- life partner start -->
-                                <li>
-                                    <a href="/html/our_services/life_partner.html">
-                                        <button type="button"
-                                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example2">
-                                            <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 =" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            <span
-                                                class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                                sidebar-toggle-item>Life Partner</span><svg
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                <path fill-rule="evenodd"
-                                                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </button>
-                                    </a>
-                                </li>
-                                <!-- life partner end -->
-
-                                <!-- car service start -->
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example10">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Car
-                                            Service</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example10" class="hidden py-2 space-y-2">
-                                        <li>
-                                            <button type="button"
-                                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                                aria-controls="dropdown-example"
-                                                data-collapse-toggle="dropdown-example11">
-                                                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6"
-                                                    fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span
-                                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                                    sidebar-toggle-item>Car Service
-                                                    Quickly</span>
-                                                <span class="group-focus:-rotate-180">
-                                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd"
-                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                            clip-rule="evenodd"></path>
-                                                    </svg>
-                                                </span>
-                                            </button>
-                                            <ul id="dropdown-example11" class="hidden py-2 space-y-2">
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                        Service Quickly 1 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold  text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                        Service Quickly 2 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                                <li class="hover:bg-gray-200">
-                                                    <a href="#"
-                                                        class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                        Service Quickly 3 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 25 25" fill="currentColor"
-                                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                Service 1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                Service 2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Car
-                                                Service 3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- car service end -->
-
-                                <!-- advertisement start -->
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example12">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Advertisement</span>
-                                        <span class="group-focus:-rotate-180">
-                                            <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor"
-                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul id="dropdown-example12" class="hidden py-2 space-y-2">
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Advertisement
-                                                1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Advertisement
-                                                2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="hover:bg-gray-200">
-                                            <a href="#"
-                                                class="flex items-center w-full p-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 transition duration-75 rounded-lg pl-11 group">Advertisement
-                                                3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                                    fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                                    <path fill-rule="evenodd"
-                                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                        clip-rule="evenodd" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- advertisement end -->
+                                <!-- marital end -->
                             </ul>
                         </li>
-                        <!-- our service end -->
+                        <!-- primary end -->
 
-                        <!-- all brand start -->
-                        <li>
+                        <!-- progress bar start -->
+                        <div>
+                            <p class="text-center font-semibold text-cyan-600 underline underline-offset-4">Age</p>
+                        </div>
+                        <div class="flex justify-center p-2 gap-2">
+                            <select class="form-control rounded-lg bg-gray-200 text-gray-500 p-3 text-sm"
+                                name="start_age" required="">
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                                <option value="60">60</option>
+
+                            </select>
+                            <p class="flex items-center text-cyan-600">To</p>
+                            <select class="form-control rounded-lg bg-gray-200 text-gray-500 p-3 text-sm"
+                                name="start_age" required="">
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                                <option value="60">60</option>
+
+                            </select>
+                        </div>
+                        <!-- progress bar start -->
+
+                        <!-- permanent address start -->
+                        <li class="p-2">
                             <button type="button"
-                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                aria-controls="dropdown-example" data-collapse-toggle="dropdown-example13">
+                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg hover:bg-gray-200 group"
+                                aria-controls="dropdown-example1" data-collapse-toggle="dropdown-example1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                                        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
                                 </svg>
 
+
                                 <span
-                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                    sidebar-toggle-item>All Brand</span>
+                                    class="flex-1 ml-3 text-left font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
+                                    sidebar-toggle-item>Address</span>
                                 <span class="group-focus:-rotate-180">
                                     <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -921,380 +285,44 @@
                                     </svg>
                                 </span>
                             </button>
-                            <ul id="dropdown-example13" class="hidden py-2 space-y-2">
+                            <ul id="dropdown-example1" class="hidden py-2 space-y-2">
+                                <!-- Permanent Address start -->
                                 <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example2">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 =" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Richman</span><svg xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
+                                    <div class="p-2">
+                                        <label for="occupation"
+                                            class="block ml-2 mb-1 text-sm font-medium text-cyan-600">
+                                            Permanent Address
+                                        </label>
+                                        <select name="occupation" id="occupation"
+                                            class="w-full rounded-lg bg-gray-200 text-gray-500 p-3 text-sm">
+                                            <option value="">Select an address</option>
+                                            <option value="">Bangladesh</option>
+                                        </select>
+                                    </div>
                                 </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Export</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Smart</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Richman</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Top Ten</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Poor Man</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Easy</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 text-left whitespace-nowrap font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600"
-                                            sidebar-toggle-item>Plus Point</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor"
-                                            class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
+                                <!-- Permanent Address end -->
                             </ul>
                         </li>
-                        <!-- all brand end -->
+                        <!-- permanent address end -->
 
-                        <!-- all shop start -->
-                        <li>
-                            <button type="button"
-                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                aria-controls="dropdown-example" data-collapse-toggle="dropdown-example14">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-                                </svg>
-
-                                <span
-                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                    sidebar-toggle-item>All Shop</span>
-                                <span class="group-focus:-rotate-180">
-                                    <svg sidebar-toggle-item class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <ul id="dropdown-example14" class="hidden py-2 space-y-2">
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example2">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
+                        <!-- search start -->
+                        <div class="mb-1 text-center">
+                            <a href="" target=""
+                                class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-5 py-2 rounded-md">
+                                <button class="justify-center uppercase inline-flex mt-2 ">
+                                    <span class="absolute">
+                                        <svg aria-hidden="true" class="w-5 h-5 mt-1 ml-2 mr-20" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                         </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Shpo
-                                            1</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                            fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example3">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Shop
-                                            2</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                            fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <il>
-                                    <button type="button"
-                                        class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200"
-                                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example5">
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 " fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span
-                                            class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                            sidebar-toggle-item>Shop
-                                            3</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
-                                            fill="currentColor" class="w-5 h-4 ml-20 font-bold text-pink-600">
-                                            <path fill-rule="evenodd"
-                                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </il>
-                            </ul>
-                        </li>
-                        <!-- all Shop end -->
-
-                        <!-- branch office start -->
-                        <a href="/html/our_branch.html" target="_blank"><button type="button"
-                                class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                                </svg>
-
-                                <span
-                                    class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                    sidebar-toggle-item>Branch
-                                    Office</span>
-                            </button></a>
-                        <!-- branch office end -->
-
-                        <!-- campaign office start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Campaign</span>
-                        </button>
-                        <!-- campaign office end -->
-
-                        <!-- discount start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Discount
-                                Product</span>
-                        </button>
-                        <!-- discount end -->
-
-                        <!-- delivery start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Free Delivery
-                                Product</span>
-                        </button>
-                        <!-- delivery end -->
-
-                        <!-- best deal start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Best Deal</span>
-                        </button>
-                        <!-- best deal end -->
-
-                        <!-- global start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Global
-                                Product</span>
-                        </button>
-                        <!-- global end -->
-
-                        <!-- customer care start -->
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-pink-600 transition duration-75 rounded-lg group hover:bg-gray-200 pb-28 sm:pb-28">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ml-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-600 text-left"
-                                sidebar-toggle-item>Customer
-                                Care</span>
-                        </button>
-                        <!-- customer care end -->
-
+                                    </span>
+                                    <span class="ml-2">search
+                                    </span>
+                                </button></a>
+                        </div>
+                        <!-- search end -->
                     </ul>
                 </div>
             </aside>
@@ -1304,29 +332,34 @@
 
     <!-- slider start -->
     <section id="service_slider">
-        <div class="flex px-4 sm:ml-56 ml-0">
+        <div class="flex px-4 sm:ml-52 ml-0">
             <div id="gallery" class="relative  w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="h-96 sticky overflow-hidden rounded-lg">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/life_partner/slide1.jpg" class="absolute block h-96 w-full" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                            class="absolute block h-96 w-full" alt="">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="/img/life_partner/slide2.jpg" class="absolute block h-96 w-full" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                            class="absolute block h-96 w-full" alt="">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/life_partner/slide3.jpg" class="absolute block h-96 w-full" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                            class="absolute block h-96 w-full" alt="">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/life_partner/slide4.jpg" class="absolute block h-96 w-full" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                            class="absolute block h-96 w-full" alt="">
                     </div>
                     <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/img/life_partner/slide5.jpg" class="absolute block h-96 w-full" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                            class="absolute block h-96 w-full" alt="">
                     </div>
                 </div>
                 <!-- Slider controls -->
@@ -1363,38 +396,38 @@
 
     <!-- statistics start -->
     <section class="text-gray-600 body-font">
-        <div class="px-5 py-10 sm:ml-56 ml-0">
+        <div class="px-5 py-10 sm:ml-52 ml-0">
             <div class="flex flex-col text-center w-full mb-10">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-cyan-600 underline underline-offset-4">
+                <h1 class="sm:text-xl text-3xl font-medium title-font text-cyan-600 underline underline-offset-4">
                     STATISTICS OF SERVICE
             </div>
             <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
                         <img src="/img/life_partner/couple.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Total Biodata of Groom-Bride</p>
+                        <h2 class="title-font font-medium text-2xl text-cyan-500 mb-2">3.7K</h2>
+                        <p class="leading-relaxed">Groom's and Bride's Biodatas</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
                         <img src="/img/life_partner/groom.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Total Biodata of Groom</p>
+                        <h2 class="title-font font-medium text-2xl text-cyan-500 mb-2">3.7K</h2>
+                        <p class="leading-relaxed">Total Groom's Biodatas</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
                         <img src="/img/life_partner/bride.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Biodata of Total Bride</p>
+                        <h2 class="title-font font-medium text-2xl text-cyan-500 mb-2">3.7K</h2>
+                        <p class="leading-relaxed">Total Bride's Biodatas</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
                         <img src="/img/life_partner/success_couple .png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Success of Total Marriage</p>
+                        <h2 class="title-font font-medium text-2xl text-cyan-500 mb-2">3.7K</h2>
+                        <p class="leading-relaxed">Total Success Marriage's</p>
                     </div>
                 </div>
             </div>
@@ -1404,44 +437,537 @@
 
     <!-- Our Services  start -->
     <section class="text-gray-600 body-font">
-        <div class="px-5 py-10 sm:ml-56 ml-0">
+        <div class="px-5 py-10 sm:ml-52 ml-0">
             <div class="flex flex-col text-center w-full mb-10">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-cyan-600 underline underline-offset-4">OUR
-                    SERVICES
+                <h1
+                    class="sm:text-xl text-3xl font-medium title-font text-cyan-600 underline underline-offset-4 uppercase">
+                    How It Works
             </div>
             <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
-                        <img src="/img/life_partner/couple.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Total Biodata of Groom-Bride</p>
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-16 h-16 mb-3 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                        </svg>
+
+                        <h2 class="title-font font-medium text-xl text-cyan-500 mb-2">Create Resume</h2>
+                        <p class="leading-relaxed">Can easily create free biodata Can easily create free biodata</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
-                        <img src="/img/life_partner/groom.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Total Biodata of Groom</p>
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-16 h-16 mb-3 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+                        <h2 class="title-font font-medium text-xl text-cyan-500 mb-2">Connect</h2>
+                        <p class="leading-relaxed">Select & Connect with matches you like</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
-                        <img src="/img/life_partner/bride.png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Biodata of Total Bride</p>
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-16 h-16 mb-3 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                        </svg>
+
+                        <h2 class="title-font font-medium text-xl text-cyan-500 mb-2">Interact</h2>
+                        <p class="leading-relaxed">Become a premium member & start conversation</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="shadow-md px-4 py-8 rounded-lg">
-                        <img src="/img/life_partner/success_couple .png" class="w-20 h-20 mb-3 inline-block" alt="">
-                        <h2 class="title-font font-medium text-3xl text-gray-900 mb-2">3.7K</h2>
-                        <p class="leading-relaxed">Success of Total Marriage</p>
+                    <div class="shadow-md hover:shadow-xl px-4 py-8 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-16 h-16 mb-3 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                        </svg>
+
+                        <h2 class="title-font font-medium text-xl text-cyan-500 mb-2">Matchmaker</h2>
+                        <p class="leading-relaxed">Become a premium member & take matchmaker support
+
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Our Services end -->
+
+    <!-- all biodata start -->
+    <section>
+        <div class="flex flex-col px-5 py-5 sm:ml-52 ml-0">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1
+                    class="sm:text-xl text-3xl font-medium title-font text-cyan-600 underline underline-offset-4 uppercase">
+                    All biodata
+            </div>
+            <div class="mb-3 flex items-center justify-end">
+
+
+                <div>
+                    <label for="SortBy" class="sr-only">SortBy</label>
+
+                    <select id="SortBy" class="form-control rounded-lg bg-gray-100 text-gray-500 p-2 text-sm">
+                        <option>New</option>
+                        <option value="Title, DESC">Popular</option>
+                        <option value="Title, ASC">Premium</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex flex-col mb-10 justify-between md:flex-row sm:px-0">
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/groom.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN1032</div>
+                                        <div class="font-bold text-stone-500 mx-4">Aman Ullah</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 1996</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/bride.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN1035</div>
+                                        <div class="font-bold text-stone-500 mx-4">Fatema Akter</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 2002</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/groom.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN1062</div>
+                                        <div class="font-bold text-stone-500 mx-4">Aman Ullah</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 1996</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between md:flex-row sm:px-0">
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/bride.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN2062</div>
+                                        <div class="font-bold text-stone-500 mx-4">Ayesa Akter</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 1996</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/groom.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN2022</div>
+                                        <div class="font-bold text-stone-500 mx-4">Md Ibrahim</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 2002</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="overflow-hidden  flex mb-5 sm:mb-0 shadow-xl bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l">
+
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-white rounded-tl-full ">
+                        <div class=" p-8 items-center justify-center flex py-2">
+                            <div class="flex flex-col  items-center justify-center ">
+                                <div class="flex items-center">
+                                    <div class="p-1 bg-white rounded-full">
+
+                                        <img src="/img/life_partner/bride.png" alt="" class="rounded-full w-24 h-24" />
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-cyan-500 mx-4">LN2022</div>
+                                        <div class="font-bold text-stone-500 mx-4">Rafiya Kawser</div>
+                                        <div class="text-sm font-medium text-stone-500 hover:text-stone-500 mx-4"><a
+                                                href="#">+8801824333333</a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-col">
+                                        <div class=" sm:-mx-6 lg:-mx-8">
+                                            <div class="inline-block  py-2 sm:px-6 lg:px-8">
+                                                <div class="">
+                                                    <table class="text-sm font-light">
+                                                        <thead
+                                                            class="border-b text-left font-medium dark:border-neutral-500">
+                                                            <tr>
+                                                                <th scope="col" class="px-6 py-2">Date of Birth</th>
+                                                                <th scope="col" class="px-6 py-2">January, 1996</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Height</th>
+                                                                <th scope="col" class="px-6 py-2">5'7"</th>
+                                                            </tr>
+                                                            <tr class="border-b text-left dark:border-neutral-500">
+                                                                <th scope="col" class="px-6 py-2">Occupation</th>
+                                                                <th scope="col" class="px-6 py-2">Government Job
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mb-1 text-center">
+                                    <a href="" target=""
+                                        class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-2 py-2 rounded-md">
+                                        <button class="justify-center uppercase inline-flex py-2"><span>View biodata
+                                            </span>
+
+                                        </button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <ol class="flex justify-center mt-5 gap-1 text-xs font-medium">
+                <li>
+                    <a href="#"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180">
+                        <span class="sr-only">Prev Page</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href=""
+                        class="block h-8 w-8 rounded bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-center leading-8 text-white">1</a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                        2
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                        3
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                        4
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180">
+                        <span class="sr-only">Next Page</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- all biodata end -->
 
 
     <!-- Flowbite CDN -->
@@ -1450,3 +976,4 @@
 </body>
 
 </html>
+
