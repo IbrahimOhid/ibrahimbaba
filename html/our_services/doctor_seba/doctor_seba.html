@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Seba</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- main navbar start -->
+    <nav class="bg-gray-50 fixed w-full z-20 py-2 px-2 sm:px-0 top-0 left-0 border-b border-gray-200">
+
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mt-3 mb-3">
+            <a class="flex items-center">
+                <img src="/img/doctor_seba/doctor_seba_logo.png" class="w-12 h-12" alt="logo">
+
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-500 ml-5">DOCTOR
+                    SEBA</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-cyan-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 underline  underline-offset-4 uppercase"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 hover:underline underline-offset-4 uppercase">Doctor</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 hover:underline underline-offset-4 uppercase">hospital</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 hover:underline underline-offset-4 uppercase">medicines</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 hover:underline underline-offset-4 uppercase">About
+                            us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-emerald-500 rounded md:border-0 md:hover:text-indigo-700 md:p-0 hover:underline underline-offset-4 uppercase">contact
+                            us</a>
+                    </li>
+                    <li data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+                        class="flex text-white bg-cyan-600 rounded md:bg-transparent md:text-emerald-500 border border-cyan-700 px-5 py-[1px] text-center items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 mr-1">
+                            <path fill-rule="evenodd"
+                                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        My Account
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main navbar end -->
+
+    <!-- hero_area start -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-28 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="/img/doctor_seba/hero.jpg">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">WELCOME TO <span
+                        class="text-indigo-500">
+                        DOCTOR SEBA
+                    </span>
+                </h1>
+                <p class="tracking-wide leading-7 text-xl text-justify">
+                    <span class="text-emerald-500 underline-offset-4 underline font-semibold">DOCTOR SEBA</span> This is
+                    a service website through which you can contact your nearest specialist doctors
+                    and find out which clinic they will see patients at when. If you want you can directly contact the
+                    clinic number. Contact numbers of all clinics will be given here. Each doctor will also be given a
+                    separate number for the appointment through which you can call at the time of your convenience and
+                    fix the appointment. The main purpose of this website is to serve the people.
+                </p>
+                <button
+                    class="border border-emerald-500 border-spacing-4 px-2 py-2 mt-8 rounded-md text-emerald-500 font-semibold hover:bg-emerald-500 hover:text-white">CONTACT
+                    US</button>
+            </div>
+        </div>
+    </section>
+    <!-- hero_area end -->
+
+    <!-- specialist doctor start -->
+    <section>
+        <div class="flex justify-center px-5">
+            <div class="flex flex-col justify-center items-center ">
+                <div class="text-emerald-500 underline underline-offset-4 text-3xl font-medium uppercase">Our Specialist
+                    Doctors</div>
+                <div class="flex flex-col py-8 md:flex-row max-w-7xl justify-center items-center ">
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/male_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. Aman Ullah</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, FCPS (Surgery - Gold
+                                            Medalist), FACS
+                                            (USA), FMAS (India).</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/female_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Prof. Dr. Rehana Begum</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, MPhil Trainer in Breast &
+                                            Cervical Cancer from Georgetown University (USA).</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/male_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. Khandaker ABM Abdullah Al Hasan</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, BCS (Health), FCPS
+                                            (Surgery), MS (Surgical Oncology), FMAS (India).</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center px-5">
+            <div class="flex flex-col justify-center items-center ">
+                <div class="flex flex-col py-5 md:flex-row max-w-7xl justify-center items-center ">
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/female_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. Salma Akter Zahan</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, MCPS, FCPS ( Eye),
+                                            Ophthalmoligist and phaco surgeon.</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/female_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">PDr. Sadia Yasmin Saki</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, MPhil Trainer in Breast &
+                                            Cervical Cancer from Georgetown University (USA)</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/male_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. S. M. Anwar Hossain</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS (DMC), FCPS (Medicine),
+                                            Medicine Specialist.</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center px-5">
+            <div class="flex flex-col justify-center items-center ">
+                <div class="flex flex-col mt-5 md:flex-row max-w-7xl justify-center items-center ">
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/female_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. Salma Akter Zahan</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, MCPS, FCPS ( Eye),
+                                            Ophthalmoligist and phaco surgeon.</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/female_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">PDr. Sadia Yasmin Saki</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS, MPhil Trainer in Breast &
+                                            Cervical Cancer from Georgetown University (USA)</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="overflow-hidden w-full m-4 flex justify-center shadow-lg hover:shadow-2xl bg-white rounded-lg  md:w-[33%] px-8">
+
+                        <div class="flex flex-col md:flex-row  py-5 items-center justify-center  ">
+                            <div class="  items-center justify-center flex py-2">
+                                <div class="flex flex-col  items-center justify-center text-center">
+                                    <img src="/img/doctor_seba/male_doctor.png" class="w-32 h-32" alt=""
+                                        class="rounded-full" />
+                                    <div class="font-bold py-1">Dr. S. M. Anwar Hossain</div>
+                                    <div class="text-cyan-600 italic py-1"><a href="#">MBBS (DMC), FCPS (Medicine),
+                                            Medicine Specialist.</a></div>
+                                    <div class="flex gap-24 mt-4">
+                                        <button
+                                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">Appointment</button>
+                                        <button
+                                            class=" flex items-center bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">View
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-4 h-4 ml-2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg></span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" px-12">
+            <a href="">
+                <button
+                    class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white px-3 py-1 rounded-sm text-lg">More
+                    Doctors...</button>
+            </a>
+        </div>
+    </section>
+    <!--specialist doctor end-->
+
+    <!--all specialist list start-->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-10 mx-auto">
+            <div class="text-emerald-500 text-center py-5 underline underline-offset-4 text-3xl font-medium uppercase">Our Specialist</div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Child Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Gynecologist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Surgery and Brain
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Spine Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Plastic Surgery
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Ndphrology Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Liver Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Ult.sonogram Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Radiotherapy Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Oncology Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Internal Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Surgery Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a href="" class="mt-4">
+                        <h2 class="flex text-gray-900 text-2xl font-medium border border-spacing-4 py-8 border-emerald-500 justify-center items-center hover:bg-emerald-500 hover:text-white rounded-md">Medicine Specialist
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                  </svg>
+                                  
+                            </span>
+                        </h2>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--all specialist list end-->
+
+    <!--footer start-->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <img src="/img/doctor_seba/doctor_seba_logo.png" class="w-12 h-12" alt="">
+              <span class="ml-3 text-xl text-indigo-500">Tailblocks</span> 
+            </a>
+            <p class="mt-2 text-sm text-gray-500">We are waiting for you!</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Contact Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy Poicy</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Terms & Condition</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Other Page</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Hospital</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Doctors</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Medicine</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Diseases</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Careers</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Help Center</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">FAQ</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Follow Us</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Facebook</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Twitter</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Instagram</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Linkedin</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!--footer end-->
+
+
+    <!-- Flowbite CDN -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

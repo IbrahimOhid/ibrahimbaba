@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- main navbar start -->
+    <nav class="bg-gray-50 fixed w-full z-20 py-2 px-2 sm:px-0 top-0 left-0 border-b border-gray-200">
+
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mt-3 mb-3">
+            <a class="flex items-center">
+                <img src="/img/life_partner/logo.png" class="w-14 h-14" alt="logo">
+
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-500 ml-5">Life
+                    Partner</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-cyan-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Search
+                            Partner</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Success
+                            Stories</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Contact
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-cyan-600 rounded md:border-0 md:hover:text-blue-700 md:p-0 hover:underline underline-offset-4">Live
+                            Chat</a>
+                    </li>
+                    <li data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+                        class="flex text-white bg-cyan-600 rounded md:bg-transparent md:text-cyan-700 border border-cyan-700 px-5 py-[1px] text-center items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 mr-1">
+                            <path fill-rule="evenodd"
+                                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        My Account
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main navbar end -->
+
+    <!-- sidebar start -->
+    <section id="sidebar">
+        <div class="mt-28 mb-3 shadow-md">
+            <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+                aria-controls="sidebar-multi-level-sidebar" type="button"
+                class="inline-flex items-center p-2  ml-3 text-sm text-cyan-600 rounded-lg sm:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 mb-1">
+                <span class="sr-only">Open sidebar</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                    </path>
+                </svg>
+            </button>
+
+            <aside id="sidebar-multi-level-sidebar"
+                class="fixed top-[92px] left-0 z-40 w-52 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-50 shadow-md"
+                aria-label="Sidebar">
+
+                <div class="h-full mt-3 overflow-y-auto">
+                    <div class="mb-10 text-center ">
+                        <a href="" target=""
+                            class="bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white font-semibold px-5 py-2 rounded-full">
+                            <button class="justify-center uppercase inline-flex mt-2 ">
+                                <span class="absolute">
+                                </span>
+                                <span class="ml-2 uppercase">My Biodata
+                                </span>
+                            </button></a>
+                    </div>
+
+                    <div class="mb-10">
+                        <ul>
+                            <li>
+                                <a href="" class="text-cyan-500 mb-3 font-semibold bg-slate-200 py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                                    </svg>
+
+
+                                    <span>DASHBOARD</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                                    </svg>
+
+
+                                    <span>EDIT BIODATA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                                    </svg>
+
+
+                                    <span>ALL SHOT LIST</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                                    </svg>
+
+
+
+                                    <span> IGNORE LIST</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+
+
+
+
+                                    <span>MY PURCHASED</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </svg>
+
+
+
+                                    <span>SUPPORT & REPORT</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                                    </svg>
+
+
+                                    <span>SETTING</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-cyan-500 mb-3 font-semibold hover:bg-slate-50 hover:shadow-md py-2 flex px-2 gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                                    </svg>
+
+
+                                    <span>LOG OUT</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- sidebar end -->
+
+    <!-- statistics start -->
+    <section class="text-gray-600 body-font">
+        <div class="px-5 py-5 sm:ml-52 ml-0">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                </svg>
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">Connection Available</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-center">0</h2>
+                            <p class="mt-3 px-4 text-slate-500 text-center items-center sm:px-0">
+                                Connection is required to view contact details of each biodata.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
+                                </svg>
+
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">Number of Biodata Views</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-center">5</h2>
+                            <p class="mt-3 px-4 text-slate-500 text-center items-center sm:px-0">
+                                Total Number of times your biodata has been visited.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" />
+                                </svg>
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">Biodata has been Shortlisted</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-center">3</h2>
+                            <p class="mt-3 px-4 sm:px-0 text-slate-500 text-center items-center">
+                                Those number of people shortlisted your biodata.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 py-5 sm:ml-52 ml-0">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                                </svg>
+
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">Short List</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-end mr-10">2</h2>
+                            <p class="mt-3 px-4 text-slate-500 text-center items-center sm:px-0">
+                                All your short listed biodatas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+
+
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">Ignore List</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-end mr-10">5</h2>
+                            <p class="mt-3 px-4 text-slate-500 text-center items-center sm:px-0">
+                                All your Ignore short listed biodatas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-50 shadow-md p-8 flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-l text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+
+
+                            </div>
+                            <h2 class="text-cyan-700 text-lg title-font font-medium">My Purchased</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-cyan-500 text-3xl font-semibold text-end mr-10">1</h2>
+                            <p class="mt-3 px-4 sm:px-0 text-slate-500 text-center">
+                                All your short listed purchased history.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- statistics end -->
+
+    <!--footer start-->
+    <div class="flex items-center px-5 py-5 sm:ml-52 ml-0 text-center justify-center">
+        <div class="m-2 max-w-5xl items-center">
+            <div class="flex md:flex-row flex-col">
+                <p class="hover:text-cyan-600 text-gray-700 font-medium m-2"> <a href="#">Who we are</a> </p>
+                <p class="hover:text-cyan-600 text-gray-700 font-medium m-2"> <a href="#">Terms of use</a> </p>
+                <p class="hover:text-cyan-600 text-gray-700 font-medium m-2"> <a href="#">Privacy Policy</a> </p>
+                <p class="hover:text-cyan-600 text-gray-700 font-medium m-2"> <a href="#">Contact Us </a> </p>
+                <p class="hover:text-green-400 text-cyan-500 font-medium m-2 underline underline-offset-4"> <a href="#">
+                        Customer Care</a> </p>
+            </div>
+            <div class="text-lg lg:text-xl text-center space-x-5 m-2"> <a href="#"> <i
+                        class="fa-brands fa-facebook-f text-white bg-blue-500 rounded-full px-[14px] py-[10px] "></i>
+                </a> <a href="#"> <i
+                        class="fa-brands fa-twitter text-white bg-cyan-400 rounded-full px-[10px] py-[10px] "></i> </a>
+                <a href="#"> <i
+                        class="fa-brands fa-google-plus-g text-white bg-red-500 rounded-full px-[10px] py-[10px] "></i>
+                </a>
+
+                <div class="mt-3 text-center"><a href="#" class="text-gray-800 underline underline-offset-2 text-base">@
+                        2021-2023
+                        lifepartner.com</a> </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+
+
+
+
+
+    <!-- Flowbite CDN -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
